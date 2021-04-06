@@ -1,0 +1,74 @@
+{
+  "students": [
+    {
+      "student": "begimayka",
+      "phone": "74957",
+      "week1": "00",
+      "week2": "535",
+      "week3": "535",
+      "week4": "352",
+      "total": "52352",
+      "id": 1
+    },
+    {
+      "student": "Aip",
+      "phone": "785798",
+      "week1": "7548",
+      "week2": "783487",
+      "week3": "27847",
+      "week4": "372587",
+      "total": "32713",
+      "id": 2
+    },
+    {
+      "student": "aaaaaaaaa",
+      "phone": "2222222",
+      "week1": "3333",
+      "week2": "444444",
+      "week3": "5555555",
+      "week4": "555",
+      "total": "666666",
+      "id": 13
+    },
+    {
+      "student": "hhhhhhhhh",
+      "phone": "58458585",
+      "week1": "34",
+      "week2": "43443",
+      "week3": "434",
+      "week4": "434",
+      "total": "344",
+      "id": 14
+    },
+    {
+      "student": "ddd",
+      "phone": "1",
+      "week1": "1",
+      "week2": "1",
+      "week3": "1",
+      "week4": "89",
+      "total": "1",
+      "id": 15
+    },
+    {
+      "student": "aiperi111",
+      "phone": "3493",
+      "week1": "242",
+      "week2": "42424",
+      "week3": "24",
+      "week4": "323",
+      "total": "232",
+      "id": 16
+    },
+    {
+      "student": "peppe",
+      "phone": "3773",
+      "week1": "3838",
+      "week2": "23737",
+      "week3": "3838",
+      "week4": "3737",
+      "total": "272",
+      "id": 17
+    }
+  ]
+}

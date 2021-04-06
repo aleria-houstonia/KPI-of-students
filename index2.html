@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous"
+    />
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header__logo">
+          <img src="./img/logo.svg" id="logo" class="img-fluid" alt="..." />
+        </div>
+      </div>
+      <div>
+        <form class="d-flex">
+            <button id="btn-add" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <strong>Добавить студента</strong>
+              </button>
+           <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Заполните анкету</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label  for="exampleInputEmail1" class="form-label">ФИО студента</label>
+                  <input id="inp-name" type="text" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Номер телефона студента</label>
+                    <input id='inp-phone' type="number" class="form-control"  aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">week-1</label>
+                    <input id="week-1" type="number" class="form-control" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">week-2</label>
+                    <input id="week-2" type="number" class="form-control" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">week-3</label>
+                    <input id="week-3" type="number" class="form-control"  aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">week-4</label>
+                    <input id="week-4" type="number" class="form-control"  aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Total KPI</label>
+                    <input id="total" type="number" class="form-control" aria-describedby="emailHelp">
+                  </div>
+                <button id="btn-save" type="submit" class="btn btn-primary">Сохранить</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          </button>
+          <br>
+          <input
+           id="search-inp"
+            style="background: none; text-align: center; font-size: 25px"
+            class="form-control me-2"
+            type="search"
+            placeholder="Введите ФИО"
+aria-label="Search"
+          />
+          <br>  
+          <button class="btn btn-outline-success" type="submit">
+            <strong>Поиск</strong>
+          </button>
+        </form>
+      </div>
+      <div class="main__students">
+        <table class="table caption-top">
+          <caption style="color: black; font-size: 40px">
+            <strong> KPI</strong>
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">ФИО</th>
+              <th scope="col">Номер телефона</th>
+              <th scope="col">week-1</th>
+              <th scope="col">week-2</th>
+              <th scope="col">week-3</th>
+              <th scope="col">week-4</th>
+              <th scope="col">Total</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="tbody1"style="border: none">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="main-modal">
+      <div class="inner-modal">
+        <div class="edit-task">
+          <input type="text" class="edit-student edit-inp" /> <br>
+          <input type="text" class="edit-phone edit-inp" /> <br>
+          <input type="text" class="edit-week1 edit-inp" /> <br>
+          <input type="text" class="edit-week2 edit-inp" /> <br>
+          <input type="text" class="edit-week3 edit-inp" /> <br>
+          <input type="text" class="edit-week4 edit-inp" /> <br>
+          <input type="text" class="edit-total edit-inp" /> <br>
+          <button type="button" class="btn btn-primary btn-close"></button> 
+          <button type="button" class="btn btn-primary btn-save">Сохранить</button>
+        </div>
+      </div>
+    </div>
+    <div class="buttons"  style="display: flex;justify-content: center;">
+      <button type="button" class="btn btn-primary btn-prev" style="margin-right:75px">Назад</button>
+      <button type="button" class="btn btn-primary btn-next">Вперед</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
